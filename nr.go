@@ -12,10 +12,11 @@ const delta = 1e-6
 
 func Sqrt(x float64) float64 {
 	z := x
-	n := 0.0
+	n :=  0.0
 	count:= 0
 	for   math.Abs(n-z) > delta {
 		n, z = z, z-(z*z-x)/(2*z)
+		fmt.Println(n)
 		count++
 	}
 	fmt.Println("Converged after: ", count)
