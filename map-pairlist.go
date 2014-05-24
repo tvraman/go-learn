@@ -5,6 +5,8 @@ import (
 	"github.com/tvraman/go-learn/utils"
 )
 
+// Note that PairList will cons a list of entries from the original map.
+
 // Exercise sortmap.SortedKeys
 func main() {
 	m := map[string]int{
@@ -18,8 +20,7 @@ func main() {
 	}
 	fmt.Println("Sorted")
 	p := pairlist.SortMapByValue(m)
-	fmt.Println(p)
 	for i := range p {
-		fmt.Println(p[i].key)
+		fmt.Println(p[i])
 	}
 }
