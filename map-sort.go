@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/tvraman/go-learn/utils"
+	"github.com/tvraman/go-learn/sortmap"
 )
 
 // Exercise sortmap.SortedKeys
