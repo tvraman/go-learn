@@ -21,6 +21,6 @@ func main() {
 	fmt.Println("Sorted")
 	p := pairlist.SortMapByValue(m)
 	for i := range p {
-		fmt.Println(p[i])
+		fmt.Println(p[i].Key, p[i].Value)
 	}
 }
