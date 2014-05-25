@@ -27,7 +27,8 @@ func (sm *sortedMap) Swap(i, j int) {
 // Exported:
 
 func SortedKeys(m map[string]int) []string {
-	sm := new(sortedMap)
+	// we could also use new below
+	sm := &sortedMap{}
 	sm.m = m
 	sm.s = make([]string, len(m))
 	i := 0

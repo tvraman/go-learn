@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/tvraman/go-learn/utils"
+	"github.com/tvraman/go-learn/pairlist"
 )
 
 // Note that PairList will cons a list of entries from the original map.
